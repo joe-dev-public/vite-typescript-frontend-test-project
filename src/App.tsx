@@ -22,7 +22,7 @@ function App() {
   const [dataChanged, setDataChanged] = useState<Boolean>(false);
 
   useEffect(() => {
-    const url = "http://127.0.0.1:8000/";
+    const url = "http://localhost:8000/";
 
     fetch(url)
       .then((response) => {
@@ -47,7 +47,7 @@ function App() {
 
   // Get data about all releases
   useEffect(() => {
-    const API_URL = "http://127.0.0.1:8000/releases/";
+    const API_URL = "http://localhost:8000/releases";
 
     async function fetchData() {
       const api_response = await fetch(API_URL);

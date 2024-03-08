@@ -1,5 +1,5 @@
 function AddReleaseForm({ setDataChanged }) {
-  const API_URL = "http://127.0.0.1:8000/releases/";
+  const API_URL = "http://localhost:8000/releases/";
 
   const handleSubmit = (event) => {
     event.preventDefault();
